@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Meu primeiro formulario</h1>
+         <form>
+        <fieldset>
+            <legend>Dados iniciais</legend>
+            <input type="text" name="nome"
+                    placeholder="Digite o seu nome... "
+                    size="150">
+                <br><br>
+                    
+            <label> 
+                Dada de Nascimento:
+                <input type="date" name="Data de Nascimento">
+            </label>
+        </fieldset>
+        <fieldset style="background-color: rgb(226, 205, 255);">
+            <legend>Complementares</legend>
+            <label for="nsup">Nivel superior?</label>
+            <input type="checkbox" id="nsup" name="nsup">
+            <br><br>
+            <input type="submit" value="Enviar"> &nbsp;&nbsp;
+            <input type="reset" value="Limpar">
+        </fildset>
+        </form>
+</body>
+</html>
