@@ -8,9 +8,9 @@
 </head>
 <body>
     <form>
-    
-        <h2>Formulário de Inscrição em Evento</h2>
-        <fieldset style="width: 40%;">
+    <fieldset style="width: 40%;">
+        <h2 style="text-align: center;">Formulário de Inscrição em Evento</h2>
+        <fieldset>
             <table style="width:10% margin= 0 auto;">
                 <tr>
                     <td 
@@ -18,7 +18,7 @@
                     </td>
                     <td>
                         <input type="text" name="nome" 
-                                placeholder="nome">
+                                placeholder="Nome">
                     </td>
                 </tr>
                 <tr>
@@ -27,12 +27,14 @@
                     </td>
                     <td>
                         <input type="text" name="E-mail" 
-                                placeholder="seu email">
+                                placeholder="E-mail">
                     </td>
                 <tr>
                 <td style="text-align: right;">Sexo:</td>
-                <td><input type="radio" name="sexo" value="masculino">Masculino<td>
-                <td><input type="radio" name="sexo" value="Feminino">Feminino<td></td>
+                <td>
+                    <input type="radio" name="sexo" value="Masculino">Masculino
+                    <input type="radio" name="sexo" value="Feminino">Feminino
+                </td>
                 
                 </tr>
                 <tr>
@@ -41,7 +43,7 @@
                     </td>
                     <td>
                         <input type="text" name="Cargo" 
-                                placeholder="nome">
+                                placeholder="Nome">
                     </td>
                     
                 </tr>
@@ -56,18 +58,18 @@
                     </td>
                     <td>
                         <input type="tel" name="telefone" 
-                                placeholder="telefone">
+                                placeholder="Telefone">
                     </td>
                 <tr>
         
         </table>
     </fieldset>
     </form>
-    
-    
+
     <form>
-            <h2>Informações da instituição</h2>Preencher os campos abaixo com as Informações da empresa que trabalha
-     <fieldset>
+            <h2 style="text-align: center;">Informações da instituição</h2>
+            <p style="text-align: center;">Preencher os campos abaixo com as informações da empresa em que trabalha</p>
+     <fieldset >
        <table>
         <tr>
             <td
@@ -79,30 +81,50 @@
             </td>
         </tr>
         <tr>
-            <td style="text-align: right;" name="endereço completo">Endereço completo</td>
+            <td style="text-align: right;" name="endereço completo">Endereço completo:</td>
             <td>
                 <input type="text" name="endereço completo"
                                 placeholder="Endereço">
             </td>
         <tr>
-                <td style="text-align: right;" name="Cidade">Cidade</td>
+                <td style="text-align: right;" name="Cidade">Cidade:</td>
                 <td>
                     <input type="text" name="cidade"
                                     placeholder="Cidade">
                 </td>
         </tr>
         <tr>
-            <td>
-                <select name="uf" name="Estado"> estado
+            <td style="text-align: right;">Estado:</td>
+                <td>
+                <select name="uf" name="Estado">
                     <option selected disabled>Selecione...</option>
-                    <option>Rondônia</option>
-                    <option>Rio de Janeiro</option>
                     <option>Acre</option>
+                    <option>Alagoas</option>
+                    <option>Amapá</option>
                     <option>Amazonas</option>
-                    <option>São Paulo</option>
-                    <option>Roraima</option>
+                    <option>Bahia</option>
+                    <option>Ceará</option>
+                    <option>Distrito Federal</option>
+                    <option>Espirito Santo</option>
+                    <option>Goiás</option>
+                    <option>Maranhão</option>
+                    <option>Mato Grosso do Sul</option>
+                    <option>Mato Grosso</option>
                     <option>Minas Gerais</option>
-                </select>
+                    <option>Pará</option>
+                    <option>Paraíba</option>
+                    <option>Paraná</option>
+                    <option>Pernambuco</option>
+                    <option>Piauí</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Rio Grande do Norte</option>
+                    <option>Rio Grande do Sul</option>
+                    <option>Rondônia</option>
+                    <option>Roraima</option>
+                    <option>Santa Catarina</option>
+                    <option>São Paulo</option>
+                    <option>Sergipe</option>
+                    <option>Tocantins</option>
             </td>
         </tr>
         <tr>
@@ -112,13 +134,16 @@
                                     placeholder="Quant.Funcionarios">
             </td>
         </tr>
-
-
+        <tr>
+            <td style="text-align: right;">Observações:</td>
+                        <td><textarea name="texto"cols="21" rows="5"></textarea></td>
+        </tr>
        </table>
     </fieldset>
-                
-            
-       
+    <p style="text-align: center;">Recibo:<input type="checkbox">Emitir em nome da Instituição
+        <input type="button" value="Fazer Inscrição">
+</fieldset>
+
     </form>
 </body>
 </html>
